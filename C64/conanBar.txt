@@ -1,0 +1,622 @@
+    5 rem typed in by roberto, eregil e tsm - 2009
+   10 rem *
+   20 rem * conan
+   30 rem *
+   40 rem -variabili-
+   50 dimno$(4)
+   60 fo=50:ze=30:ab=45:ft=28:as=0:co$="conan":mz=0:no=0:sp=0:sc=0:pl=0
+   70 wy=53280:yw=53281
+   90 rem -titolo-
+  100 print"{clr}":pokewy,0:pokeyw,2:gosub30000
+  110 printspc(10)"{down}{down}{down}{down}{blk}{rvon}   {rght}   {rght} {CBM-*}{rght} {rght}   {rght} {CBM-*}{rght} "
+  120 printspc(10)"{rvon} {rght}{rght}{rght} {rght} {rght} {rvof}{CBM-*}{rvon}{CBM-*} {rght} {rght} {rght} {rvof}{CBM-*}{rvon}{CBM-*} "
+  130 printspc(10)"{rvon} {rght}{rght}{rght} {rght} {rght} {rght}{rvof}{CBM-*}{rvon} {rght}   {rght} {rght}{rvof}{CBM-*}{rvon} "
+  140 printspc(10)"{rvon}   {rght}   {rght} {rght}{rght} {rght} {rght} {rght} {rght}{rght} "
+  150 printspc(10)"{down}il barbaro"
+  160 printspc(9)"{down}{down}{down}{down}{down}{down}{down}{down}adventure game by luke"
+  163 rem-luce spada-
+  165 fora=0to5
+  170 fork=55390to55403:pokek,7:forb=1to30:nextb,k
+  180 fork=55390to55403:pokek,0:forb=1to10:nextb,k,a
+  190 print"{home}":fork=1to23:print"{yel}"spc(18)"{CBM-K}":next
+  200 a=55776:fork=1504to1543:pokek,98:pokea,7:a=a+1:next
+  205 rem-schermata di apertura-
+  207 print"{clr}{home}":pokeyw,1:pokewy,7
+  210 print"{blk}{down}{rght}{rght}{rght}{rght}{rght}O{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}P{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}{CBM-Y}P"
+  220 print"{rght}{rght}{rght}{rght}{rght}{CBM-H}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{CBM-M}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{CBM-N}"
+  230 print"{rght}{rght}{rght}{rght}{rght}{CBM-H}{rvon}{blu}{rght}c{rvof}{blk}hiunque tu{rght}{rght}{CBM-M}{rght}{rght}gioso,se pen{rght}{CBM-N}"
+  240 print"{rght}{rght}{rght}{rght}{rght}{CBM-H}{rght}sia prepara-{rght}{CBM-M}{rght}{rght}si di potere{rght}{CBM-N}"
+  250 print"{rght}{rght}{rght}{rght}{rght}{CBM-H}{rght}ti!dovrai af{rght}{CBM-M}{rght}{rght}farcela.....{rght}{CBM-N}"
+  260 print"{rght}{rght}{rght}{rght}{rght}{CBM-H}{rght}frontare le{rght}{rght}{CBM-M}{rght}{rght}....seguimi!{rght}{CBM-N}"
+  270 print"{rght}{rght}{rght}{rght}{rght}{CBM-H}{rght}piu'crudeli{rght}{rght}{CBM-M}{rght}{blu}{rvon}{rght}t{rvof}{blk}i portero'{rght}{rght}{CBM-N}"
+  280 print"{rght}{rght}{rght}{rght}{rght}{CBM-H}{rght}creature del{rght}{CBM-M}{rght}{rght}nella fredda{rght}{CBM-N}"
+  290 print"{rght}{rght}{rght}{rght}{rght}{CBM-H}{rght}male per vin{rght}{CBM-M}{rght}{rght}cimeria.qui{rght}{rght}{CBM-N}"
+  300 print"{rght}{rght}{rght}{rght}{rght}{CBM-H}{rght}cere!!!{rght}{rght}{rght}{rght}{rght}{rght}{CBM-M}{rght}{rght}sarai chiama{rght}{CBM-N}"
+  310 print"{rght}{rght}{rght}{rght}{rght}{CBM-H}{blu}{rvon}{rght}s{rvof}{blk}e sei corag{rght}{CBM-M}{rght}{rght}to....conan!{rght}{CBM-M}"
+  320 print"{rght}{rght}{rght}{rght}{rght}{CBM-H}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{CBM-M}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{CBM-N}"
+  330 print"{rght}{rght}{rght}{rght}{rght}L{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{SHIFT-@}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{CBM-P}{SHIFT-@}":gosub 29000
+  350 pokeyw,2:pokewy,0:print"{wht}{rvon}la tua missione sara' difficile.        ";
+  360 print"{rvon}dovrai recuperare la spada fiammeggiante{down}{down}":gosub30000:print"{down}{down}"
+  370 print"{down}{rvon}io ti guidero'attraverso le mille diffi-colta' che dovrai superare.";
+  380 print"ricorda che  sei ancora debole per arrivare alla....."
+  400 gosub29000:gosub30050
+  410 print"{down}{down}{wht}...montagna luminosa!"
+  420 print"e'la che il signore del male custodisce la spada.prima di intrapren";
+  430 print"dere il viaggio dovrai armarti e rinforzarti.":gosub29000
+  440 xy=int(rnd(1)*11):gosub30170
+  450 poke53280,3:poke53281,1:print"{blk}la forza sara' cio' che ti terra' in vita.";
+  455 print" se andra'a zero tu morirai!l'abilita'ti servira'nei combattimenti.";
+  460 print"con gli zecchini potrai acquistare le armi o altro.anche la fortuna";
+  465 print"{rght}e'molto importante.tutte queste qualita'potranno essere aumentate";
+  470 print"nelle varie fasi di gioco.per affrontare alcuni avversari sono";
+  475 print"necessarie le armi incantate in vendita nella citta' di ormuz.";
+  480 print"invece nella torre magica troverai il {yel}mistico{blk} che ti dara'";
+  485 print"informazioni preziose.per uccidere il {yel}signore del male";
+  486 print"{blk} bisogna sapere";
+  490 print"{rght}il suo nome segreto.il misticolo sa!ma ora basta...conan parti!"
+  495 print"{red}{down}{down}{rght}{rght}.....{rvon}che gli dei siano con te{rvof}.....":gosub29000
+  500 rem -nome del signore del male-
+  510 fork=1to4:a=65+int(rnd(1)*(26)):no$(k)=chr$(a):next
+  550 rem -mattino-
+  555 pokeyw,5:pokewy,0
+  560 print"{down}{down}{yel}";co$;" {wht}svegliati!e'gia mattina.devi alzarti e decidere...."
+  562 goto30500
+ 1000 rem-tyro-
+ 1005 gosub30720
+ 1010 printspc(10)"{wht}{rvon}in viaggio verso tyro":pe=5:di=3
+ 1020 print"{down}{blk}sta andando tutto bene!non c'e' nessuno.":gosub29000:gosub30780
+ 1030 pokeyw,6:pokewy,0:print"{clr}"
+ 1040 printspc(17)"{rvon}{wht}  tyro  "
+ 1050 printspc(19)"{rvon}{blk}{down}{down}{down}                ":printspc(19)"{rvon}  {yel}  {blk}   {yel}  {blk}   {yel}  {blk}  "
+ 1055 print"{rvon}{rght}          ";spc(8);"  {yel}  {blk}   {yel}  {blk}   {yel}  {blk}  "
+ 1060 print"{rvon}{rght}  {yel} {blk}    {yel} {blk}  ";spc(8);"                "
+ 1065 print"{rvon}{rght}  {yel} {blk}    {yel} {blk}  {rght}{gry1}       {blk}       {gry2}              "
+ 1070 print"{up}{rvon}{rght}{blk}          {rght}{gry1} {yel} {gry1}  {yel} {gry1}  {blk}  {yel}  {blk}   {gry2}  {yel}  {gry2}   {yel}  {gry2}   {yel}  "
+ 1075 print"{up}{rvon}{rght}{blk}       {yel} {blk}  {rght}{gry1}       {blk}  {yel}  {blk}   {gry2}  {yel}  {gry2}   {yel}  {gry2}   {yel}  "
+ 1080 print"{up}{rvon}{rght}{blk}       {yel} {blk}  {gry3}           {blk}    {gry2}             "
+ 1085 print"{up}{rvon}{rght}{blk}          {gry3} {yel}  {gry3}  {yel} {gry3}  {yel}  {gry3} {blk}    {gry2}     {wht}taverna{gry2}  "
+ 1090 print"{up}{rvon}{rght}{blk}  {yel} {blk}       {gry3}           {blk}    {gry2}              "
+ 1095 print"{up}{rvon}{rght}{blk}  {yel} {blk}       {gry3} {yel}  {gry3}  {yel} {gry3}     {blk}    {gry2}       {blk}  {gry2}     "
+ 2000 print"{up}{rvon}{rght}{blk}          {gry3}           {blk}    {gry2}       {blk}  {gry2}     "
+ 2010 print"{wht}sei entrato in tyro.a destra vedi una taverna e ci entri."
+ 2020 gosub29000:pokeyw,2:pokewy,7:
+ 2030 print"{blk}";co$;",mentre mangi ascolti e senti......":gosub29990
+ 2040 print"{wht}1)un tirannosauro terrorizza la popolazione della cimeria orientale.";
+ 2050 print"sono offerti 50 zecchini a chi lo uccidera'."
+ 2060 print"2)un alchimista ne paghera' 100 a chi gli procurera'le radici dell'";
+ 2070 print"albero della vita che cresce nella foresta dei trolls."
+ 2080 print"3)il conte di yul cerca guerrieri per la vigilanza del suo castello."
+ 2090 print"{blk}{down}ora scegli o premi:4 per tornare a casa,5 per la situazione"
+ 2093 inputq:print"{clr}"
+ 2095 ifq=5thengosub30170:goto2030
+ 2097 pokeyw,1:pokewy,6:printco$;",parti e buona fortuna!"
+ 3000 onqgoto3010,5000,8020,30500
+ 3010 rem -tirann-
+ 3020 pe=9:di=6:gosub30780
+ 3030 print"{clr}":pokeyw,14
+ 3040 printspc(12)"{rvon}{wht}il tirannosauro"
+ 3050 printspc(19)"{rvon}{grn}{down}{down}{down}{SHIFT-POUND}      {CBM-*}{up}{left}{left}{left}{left}{left}{yel}{SHIFT-POUND}{grn}  {CBM-*}{up}{left}{left}{SHIFT-POUND}{down}"
+ 3060 printspc(21)"{down}{rvon}{SHIFT-POUND}    {down}{left}{left}{left}{left}{left}{left}{SHIFT-POUND}{rvof}{SHIFT-POUND}{rvon}   {CBM-*}"
+ 3070 printspc(23)"{rvon}{SHIFT-POUND}   {down}{left}{left}{left}{left}     {CBM-*}":printspc(21)"{rvon}{lgrn}{SHIFT-POUND}   {grn}   "
+ 3080 printspc(21)"{lgrn}{CBM-*}{rvon}{rght}{grn}    ":printspc(23)"{lgrn}QQQQQ{down}{left}{left}{left}{left}{left}{left}QQQQQQQ"
+ 3090 printspc(22)"QQQQQQQ{down}{left}{left}{left}{left}{left}{left}QQQQQ"
+ 4000 printspc(24)"{rvon}{grn} {blk} {grn} {down}{left}{left}{left}{blk} {grn} "
+ 4010 print"{brn}{up}{up}{rght}{rvon}{SHIFT-POUND}         {CBM-*}":print"{rvon}{SHIFT-POUND}            {CBM-*}"
+ 4020 fort=1to40:print"{rvon} ";:next
+ 4070 print"{down}{blk}ora devi combattere.e' inutile la fuga!":gosub29000:poke53281,1
+ 4080 no=1:nm$="tirannosauro":cm=50:fz=50:gosub60000:ze=ze+50:ab=ab+5:fo=fo+10
+ 4085 no=0
+ 4090 print"ottimo lavoro!ora riposati per riprendere forza."
+ 4100 gosub29000:goto30500
+ 5000 rem -trolls-
+ 5010 pe=10:di=7:gosub30780
+ 5020 print"{clr}":pokewy,1:pokeyw,0
+ 5030 printspc(10)"{rvon}{wht}la foresta dei trolls"
+ 5035 print"{rvon}{lgrn}{down}{down}{down}{down}{rght}{rght}{SHIFT-POUND} {down}{left}{left}  {down}{left}{left}  {down}{left}{left}{rvof}{CBM-*}{rvon} {up}{up}{up}";
+ 5040 fors=1to4:print"{rvon}                                 ":print"{rght}{rght}{rght}{rght}";:next
+ 5050 print"{rvon}{brn} {rght}{rght}{brn} {orng}{rght}{rght} {orng}{rght}{rght}{rght} {rght}{brn} {rght}{rght}{brn} {rght}{orng} {rght}{rght}{brn} {rght}{orng} {rght}{rght}{rght}{rght}{orng} {rght}{rght}{brn} {up}{up}{up}{up}{lgrn} {CBM-*}{down}{left}{left}  {down}{left}{left}  {down}{left}{left} {rvof}{SHIFT-POUND}"
+ 5060 print"{down}{rght}{rght}{rght}{rght}{rvon}{brn} {rght}{rght}{brn} {orng}{rght}{rght} {orng}{rght}{rght}{rght} {rght}{brn} {rght}{rght}{brn} {rght}{orng} {rght}{rght}{brn} {rght}{orng} {rght}{rght}{rght}{rght}{orng} {rght}{rght}{brn} "
+ 5080 fors=1to3:fora=1to40:print"{rvon}{grn} ";:next:print"";:next
+ 6000 print"{down}{down}{down}{rght}{rvof}tutto sembra calmo":gosub29000
+ 6010 print"{clr}":pokeyw,0:pokewy,0
+ 6020 print"{wht}maledizione!sei caduto in una buca!":gosub29990
+ 6030 print"probabilmente questa e'una caverna dei  trolls!incamminati....."
+ 6040 gosub29990:print"{yel}laggiu' c'e' una luce.....":gosub29990
+ 6050 print"{red}.....ma anche un troll!ti viene incontro con un'ascia!":gosub8000
+ 6080 print"{wht}non e' ancora finita!":gosub29990
+ 6085 print"{yel}un altro troll arriva!":gosub8000
+ 6090 print"{wht}sei ormai vicino......":gosub29990
+ 7000 print"{yel}...l'ultimo troll pero' ti assale!":gosub8000
+ 7080 ze=ze+100:ab=ab+5:fo=fo+20:no=0
+ 7090 print"{clr}{wht}ecco l'albero della vita!prendilo e riposati.":gosub29000:goto30500
+ 8000 print"{down}{wht}";co$;"!difenditi":gosub29000:poke53281,1
+ 8010 no=1:nm$="troll":cm=40:fz=30:gosub60000:poke53281,0:poke53280,0:return
+ 8020 rem-castello-
+ 8030 pe=6:di=4:gosub30780
+ 8040 print"{clr}":pokeyw,4
+ 8050 printspc(15)"{rvon}{wht}il castello{down}{down}{down}{down}"
+ 8060 printspc(17)"{blk}{rvon}{CBM-C}{CBM-V}{rght}{rght}{rght}{CBM-C}{CBM-V}":printspc(17)"{rvon}  {rght}{rght}{rght}  "
+ 8070 printspc(17)"{rvon}  {gry2}   {blk}  ":printspc(17)"{rvon}  {gry2}   {blk}  "
+ 8080 printspc(15)"{rvon}{grn}{SHIFT-POUND}         {CBM-*}":printspc(14)"{rvon}{SHIFT-POUND}           {CBM-*}"
+ 8090 fort=1to120:print"{rvon} ";:next
+ 9000 print"{rvof}{wht}":gosub29000
+ 9030 pokeyw,6:t=15+int(rnd(1)*16):ze=ze+t
+ 9040 print"{wht}il conte di yul ti offre{yel} ";t;"{wht}zecchini"
+ 9045 print"per tre giorni di servizio"
+ 9050 print"{cyn}";co$;"{wht} dovrai sorvegliare i dintorni del castello.":gosub29000
+ 9060 pokeyw,1:forg=1to3:print"{grn}coraggio ";co$;" parti!"
+ 9070 print"{rvon}{yel}giornata numero ";g:di=g:pe=3:gosub30780:print"{clr}":next
+ 9080 print"hai lavorato bene!{rght}ora prendi la paga e torna a casa!"
+ 9090 gosub29000:goto30500
+ 10000 rem -arya-
+ 10010 gosub30720
+ 10020 printspc(10)"{wht}{rvon}in viaggio verso arya":pe=8:di=6
+ 10030 print"{down}{blk}sta andando tutto bene!non c'e' nessuno.":gosub29000:gosub30780
+ 10040 printspc(18)"{blu}{rvon}arya"
+ 10050 printspc(20)"{rvon}{down}{down}{down}{down}{blk} {down}{left}{left}{orng}   {down}{left}{left}{left}{left}{left}{brn}{SHIFT-POUND}     {CBM-*}":gosub27260:gosub29000
+ 10150 pokeyw,7:print"{wht}sei entrato nella piazza.ora ascolta...":gosub29000
+ 10160 pokeyw,5:print"{blk}riesci a capire che.....{down}"
+ 10170 print"{wht}1)una carovana diretta ad ormuz cerca un guerriero per ";
+ 10180 print"la scorta.paghera' 50 zecchini."
+ 10190 print"2)york,il malvagio unno,ha{rght}rubato l'idolo d'oro del dio";
+ 10200 print"{rght}crown.sono offerti 60 zecchini a chi lo riportera'al tempio."
+ 10210 print"3)si dice che sui monti un veggente faccia grandi profezie."
+ 10220 print"{yel}{down}{down}ora rispondi con un numero oppure premi:5 per vedere la tua";
+ 10230 print" situazione,4 per tornare a casa.":inputx:print"{clr}"
+ 10240 ifx>4thengosub30170:goto10160
+ 10250 onxgoto10270,11150,11330,30500
+ 10270 rem -ormuz-
+ 10380 pokeyw,7:print"{home}":fort=1to280:print"{rvon}{lblu} ";:next
+ 10390 print"{home}per arrivare ad ormuz bisogna attraversare il deserto...."
+ 10400 gosub29000:di=6:pe=8:gosub30780
+ 10410 pokeyw,1:printspc(18)"{rvon}{red}ormuz"
+ 10420 printspc(18)"{down}{down}{down}{down}{rvon}{brn} {rght}{rght}{rght} {down}{left}{left}{left}{left}{left}{left}{blk}{SHIFT-POUND}{brn} {orng}   {brn} {blk}{CBM-*}"
+ 10430 printspc(17)"{blk}{rvon}       ":gosub27260
+ 10490 print"{down}{grn}sei finalmente arrivato!"
+ 10500 fo=fo+5:ze=ze+50:gosub29000
+ 10510 pokeyw,1:print"{clr}{grn}";co$;"!ora scegli dove andare........"
+ 10520 print"{down}{down}{red}1)dalla maga delle pozioni":print"2)dall'alchimista"
+ 10530 print"3)dallo stregone della fortuna"
+ 10540 print"{down}{down}{blu}scegli o premi:4 per tornare a casa,5 per la situazione"
+ 10550 x=0:input x:ifx>4thengosub30170:goto10510
+ 10560 print"{clr}":poke53281,2:onxgoto10570,10720,11000,30500
+ 10570 printspc(10)"{wht}{rvon}l'antro della maga"
+ 10580 print"{blk}{down}ora scegli cosa comprare........."
+ 10590 print"{yel}{down}{down}1)una pozione che dona 10 di forza(70 zecchini)"
+ 10600 print"2)un filtro che aumenta di 15 la forza(100 zecchini)"
+ 10610 print"3)un infuso che genera 25 di forza(150 zecchini)"
+ 10620 print"4)grazie,torno tra poco!"
+ 10630 print"{wht}{down}{down}scegli......":x=0:input x:ifx>3orx=0then10510
+ 10640 ifx=1thens=ze-70:f=10
+ 10650 ifx=2thens=ze-100:f=15
+ 10660 ifx=3thens=ze-150:f=25
+ 10700 ifs<0thengosub11120:goto10510
+ 10710 gosub11130:ze=s:fo=fo+f:goto10510
+ 10720 print"{wht}{rvon}il laboratorio dell'alchimista"
+ 10730 print"{blk}{down}ora scegli cosa comprare........."
+ 10740 print"{yel}{down}{down}1)una spada d'argento(300 zecchini)":print"{rvon}17 punti d'abilita'"
+ 10750 print"2)uno scudo d'oro(200 zecchini)":print"{rvon}10 punti d'abilita'"
+ 10760 print"3)un'ascia incantata(250 zecchini)":print"{rvon}15 punti d'abilita'"
+ 10770 print"4)una mazza ferrata(150 zecchini)":print"{rvon}7 punti d'abilita'"
+ 10780 print"5)una spada di platino(350 zecchini)":print"{rvon}20 punti d'abilita'"
+ 10790 print"6)grazie torno fra poco!"
+ 10800 print"{wht}{down}scegli......":x=0:input x:ifx>5orx=0then10510
+ 10810 ifx=1thens=ze-300:a=17
+ 10820 ifx=2thens=ze-200:a=10
+ 10830 ifx=3thens=ze-250:a=15
+ 10840 ifx=4thens=ze-150:a=7
+ 10850 ifx=5thens=ze-350:a=20
+ 10860 ifs<0thengosub11120:goto10510
+ 10870 gosub11130:ze=s:ab=ab+a
+ 10880 ifx=1thensp=1
+ 10890 ifx=3thenas=1
+ 10895 ifx=4thenmz=1
+ 10900 ifx=2thensc=1
+ 10910 ifx=5thenpl=1
+ 10920 goto10510
+ 11000 print"{wht}{rvon}la grotta dello stregone"
+ 11010 print"{blk}{down}ora scegli cosa comprare........."
+ 11015 print"{yel}{down}{down}1)un amuleto che dona 10 punti fortuna(70 zecchini)"
+ 11020 print"2)un talismano da 15 punti fortuna(90 zecchini)
+ 11030 print"3)un quadrifoglio dorato da 20(110 zecchini"
+ 11040 print"4)grazie torno fra poco!"
+ 11050 print"{wht}{down}scegli......":x=0:input x:ifx>3orx=0then10510
+ 11060 ifx=1thens=ze-70:w=10
+ 11070 ifx=2thens=ze-90:w=15
+ 11080 ifx=3thens=ze-110:w=20
+ 11090 ifs<0thengosub11120:goto10510
+ 11100 gosub11130:ze=s:ft=ft+w:goto10510
+ 11120 print"non hai abbastanza soldi":gosub29000:return
+ 11130 print"bene,hai fatto un buon acquisto!":gosub29000:return
+ 11150 rem -unno-
+ 11160 print"{down}{down}{blk}vai ";co$;" e uccidi l'unno!":gosub29000
+ 11170 pe=6:di=4:gosub30780:pokeyw,2
+ 11180 print"{clr}{down}{wht}sei arrivato!york e'davanti a te!ha capito che sei venuto per";
+ 11190 print" l'idolo e solleva la sua pesante scure!preparati!"
+ 11200 gosub29000:cm=55:fz=45:no=1:nm$="york":pokeyw,1:gosub60000
+ 11210 pokeyw,2:print"{clr}";spc(10);"{rvon}{wht}l'idolo del dio crown{down}{down}"
+ 11220 printspc(18)"{rvon}{yel}{SHIFT-POUND}   {CBM-*}{down}{left}{left}{left}{left}{left} {CBM-*} {SHIFT-POUND} ":printspc(18)"{rvon}  {blk} {yel}  "
+ 11230 printspc(17)"{rvon}{SHIFT-POUND} {rght}{rght}{rght} {CBM-*}"
+ 11240 fort=1to3:printspc(17)"{rvon}       ":next
+ 11250 printspc(17)"{rvon}{grn}       "
+ 11260 fort=1to3:printspc(17)"{rvon}{yel}       ":next
+ 11270 printspc(17)"{CBM-*}{rvon}     {rvof}{SHIFT-POUND}{rvon}{down}{left}{left}{left}{left}{left}{left}     "
+ 11280 printspc(18)"{CBM-*}{rvon}   {rvof}{SHIFT-POUND}{rvon}{down}{left}{left}{left}{left}   {down}{left}{left}{left}{left}     "
+ 11310 printspc(9)"{down}{wht}prendilo e torna a casa":gosub29000:ab=ab+5:fo=fo+8
+ 11320 ze=ze+60:no=0:goto30500
+ 11330 rem -veggente-
+ 11340 pokeyw,2:print"{clr}";spc(10);"{wht}{rvon}verso i monti di cimeria":gosub27050
+ 11350 print"{down}{down}{down}{down}la strada sembra sgombra.....":gosub29000:pe=8:di=6:gosub30780
+ 11360 pokeyw,0:print"{yel}sei arrivato.....":gosub29990
+ 11370 print"...entri nella grotta....":gosub29990
+ 11380 print"...ecco il veggente che ti invita dentroe ti dice..":gosub29990
+ 11390 print"{wht}{down}{down}1)per 20 punti della tua forza ti offro la prima profezia"
+ 11400 print"{down}2)per la seconda voglio 15 punti fortuna"
+ 11410 print"3)per la terza voglio ben 10 punti di abilita'"
+ 11420 print"{yel}{down}{down}scegli o premi: 4 per tornare a casa,5 per la situazione"
+ 11430 inputx:ifx>4thengosub30170
+ 11435 ifx>4thenprint"{clr}":goto11390
+ 11440 ifx=4then30500
+ 11445 ifx=1thenfo=fo-20
+ 11450 ifx=1andfo<0then11510
+ 11455 ifx=1thenprint"{clr}{yel}{down}se per la torre andrai non pensar al numero";
+ 11460 ifx=1thenprint" dei tuoi nemici lunatici perche'codardi son......"
+ 11465 ifx=2thenft=ft-15
+ 11470 ifx=2andft<0then11510
+ 11475 ifx=2thenprint"{clr}{yel}{down}non serve il platino o l'oro per combattere";
+ 11480 ifx=2thenprint" contro gli avversari piu'potenti"
+ 11485 ifx=3thenab=ab-10
+ 11490 ifx=3andab<0then11510
+ 11495 ifx=3thenprint"{clr}quando vorrai conquistare l'ambita arma";
+ 11500 ifx=3thenprint" una porta dovrai aprir.scegli il numero:{blk}{down}";spc(18);xy
+ 11505 goto11520
+ 11510 print"{clr}{wht}hai tentato di imbrogliarmi!percio'...":gosub29000:goto29500
+ 11520 gosub29000:goto30500
+ 15000 rem -torre-
+ 15010 print"{clr}":pokeyw,4:printspc(10)"{wht}{rvon}verso la torre magica":gosub27050
+ 15110 print"{down}{down}{down}{wht}ora dovrai arrivare alla valle dei licantropi!"
+ 15120 gosub29000:pe=8:di=6:gosub30780
+ 15130 pokeyw,0:print"{rvon}{yel}sei entrato nella valle....":gosub29990
+ 15140 print"{down}....sembra tutto calmo!e'ormai notte...":gosub29990
+ 15150 print"{wht}{down}...c'e la luna piena in cielo.....":gosub29990
+ 15160 print"{red}{down}{down}..ed ecco che spuntano sei licantropi!":w=0:gosub29000
+ 15170 print"il primo ti attacca...ha 45 in forza e  55 in abilita'"
+ 15180 print"{down}{down}{wht}";co$;"{yel}!vuoi combattere o preferisci{rght}rinunciare al viaggio";
+ 15190 print"?(y/n)"
+ 15200 getr$:ifr$=""then15200
+ 15210 ifr$="n"thenprint"{clr}":goto30500
+ 15220 cm=55:fz=45:nm$="licantropo":no=1:gosub60255:poke53281,0
+ 15230 ifw=1then15250
+ 15240 print"{yel}il primo lo hai ucciso,ma un altro ti attacca!":w=1:goto15180
+ 15250 no=0:print"{yel}....anche il secondo{rght}e'morto!":gosub29990
+ 15260 print"{red}..gli altri ti guardano......":gosub29990
+ 15270 print"{wht}...e si dileguano nella notte!"
+ 15280 print"{down}la strada e'libera.puoi continuare il   tuo viaggio":gosub29000
+ 15290 pe=7:di=5:gosub30780
+ 15300 pokeyw,6:printspc(13)"{rvon}{wht}la torre magica"
+ 15310 printspc(18)"{down}{down}{down}{rvon}{blk} {rght} {rght} {down}{left}{left}{left}{left}{left}     {down}{left}{left}{left}{left}{left}  {yel} {blk}  "
+ 15320 printspc(18)"{rvon}     {down}{left}{left}{left}{left}{left}     {down}{left}{left}{left}{left}{left}     "
+ 15330 printspc(18)"{rvon}  {yel} {blk}  {down}{left}{left}{left}{left}{left}  {yel} {blk}  "
+ 15340 fort=1to200:print"{wht}{rvon} ";:next
+ 15400 gosub29000
+ 15410 print"{blk}il mistico ti rivela le prime tre lettere del nome del signore";
+ 15420 print" del male!non conosce pero' l'ultima lettera!":gosub29990
+ 15430 print"{yel}{down}esse sono....{wht}{rvon}";:fork=1to3:printno$(k);:next:print
+ 15440 fo=fo+10:print"{down}{down}{rvof}{wht}ora vai ";co$;"!":gosub29000:goto30500
+ 20000 rem -montagna-
+ 20010 pokeyw,0:print"{clr}{wht}{rvon}in viaggio verso la montagna"
+ 20020 print"{down}{wht}ora dovrai arrivare alla porta di roccia"
+ 20030 gosub29000:pe=6:di=5:gosub30780
+ 20040 pokeyw,0:print"{rvon}{up}{yel}ecco la porta di roccia....";
+ 20050 fort=1to213:print"{rvon}{blu} ";:next
+ 20060 printspc(17)"{down}{down}{yel}{rvon}{SHIFT-POUND}  {CBM-M}   {CBM-*}"
+ 20070 fort=1to6:printspc(17)"{rvon}   {CBM-M}    ":next
+ 20090 print"{down}{down}{down}"
+ 20140 print"....ci sono 10 numeri scolpiti...":gosub29990
+ 20150 print"{wht}...premine uno,ma attento!!":input y
+ 20160 ify<>xythenprint"{rvon}{clr}e' sbagliato!!un fulmine ti colpisce...":gosub29000
+ 20170 ify<>xythen29500
+ 20180 print"{clr}il numero e' giusto!la porta si apre!!"
+ 20190 print"{down}{down}{down}{down}{yel}ora avanza!!":gosub29000
+ 20200 pe=6:di=4:gosub30780
+ 20210 pokeyw,4:print"{rvon}{yel}inizia il sentiero macabro.....{down}{down}":gosub27110
+ 20215 gosub29000:pokeyw,0:print"{yel}provi ad avanzare....{down}":gosub29990
+ 20220 print"{wht}...un gigantesco vampiro ti sbarra la   strada!":gosub29000
+ 20230 print"{yel}egli ti attacca.....{wht}":gosub29990
+ 20240 ifas=0thenprint"...ma non hai l'ascia!":print"{down}non puoi difenderti!"
+ 20250 ifas=1thenprint"...con l'ascia puoi combattere!"
+ 20260 gosub29000:ifas=0then29500
+ 20270 nm$="vampiro":fz=60:cm=60:no=1:gosub60255
+ 20280 ab=75:fo=80:no=0:print"il sangue del vampiro rigenera le forze."
+ 20285 print"ora continua!":gosub 29000
+ 20290 pe=6:di=2:gosub30780:gosub30050
+ 20300 gosub30050:printspc(8)"{down}{down}{yel}{rvon}ecco la montagna luminosa!":gosub29000
+ 20310 print"{yel}attento!c'e' qualcuno....":gosub29990
+ 20320 print"...e' lo spettro del male!":gosub29990
+ 20330 print"{wht}si lancia su di te!non servono le armi  comuni....{red}":gosub29990
+ 20340 ifsp=0thenprint"...e tu non hai la spada d'argento.."
+ 20350 ifsp=1thenprint"...ma tu hai la spada d'argento!"
+ 20360 gosub29000:ifsp=0then29500
+ 20370 nm$="spettro":fz=70:cm=70:no=1:gosub60255
+ 20380 pokeyw,0
+ 20390 print"{wht}ora entri nella montagna...":gosub29990
+ 20400 print"...e' molto buio...senti una risata!":gosub29990
+ 20410 print"e'lui!{yel}il signore del male!":gosub29000
+ 20420 print"{clr}{yel}non serve combattere!devi pronunciare il suo nome(4 lettere)!"
+ 20430 x$="":input x$:ifx$=no$(1)+no$(2)+no$(3)+no$(4)then21000
+ 20435 fory=1to4:ifmid$(x$,y,1)=""then20420
+ 20440 next:print"{wht}il nome non e' giusto!":d=int(rnd(1)*30):gosub27000
+ 20445 print"l'ultima lettera e'....";:t=asc(no$(4)):u=asc(mid$(x$,4,1))
+ 20450 ift>uthenprint"troppo bassa!"
+ 20453 ift<uthenprint"troppo alta!"
+ 20455 ift=uthenprint"giusta!devi ricordarti le altre"
+ 20457 print"il signore ti colpisce con una saetta!":gosub29990
+ 20460 print"la tua forza e' diminuita di ";d:fo=fo-d:iffo<1then29500
+ 20470 print"ora ne hai solo...";fo
+ 20480 gosub29000:goto20420
+ 21000 pokeyw,2:print"{clr}{yel}il signore urla...":gosub29990
+ 21010 print"...hai indovinato il suo nome!":gosub29990
+ 21020 print"{wht}egli cade e diventa polvere!{down}{down}{down}{down}":gosub29990:gosub30000
+ 21030 printspc(5)"{down}{down}{down}{down}{rvon}{yel}la spada fiammeggiante e' tua!":fi=1:gosub29000
+ 25000 rem -punteggio-
+ 25010 pokeyw,4:print"{wht}{down}{down}{down}{down}{rvon}punteggio finale....{yel}";
+ 25020 p=fo*2+ab*3+ft+ze:iffi=1thenp=p+1000
+ 25030 ifas=1thenp=p+500
+ 25040 ifmz=1thenp=p+100
+ 25050 ifsc=1thenp=p+50
+ 25060 ifsp=1thenp=p+500
+ 25070 ifpl=1thenp=p+300
+ 25080 printp:print"{down}{down}{down}{wht}{rvon}la tua qualifica e'...."
+ 25085 ifp<100thenq$="inqualificabile":goto25500
+ 25090 ifp<300thenq$="schiavo senza onore":goto25500
+ 25100 ifp<600thenq$="servo della gleba":goto25500
+ 25110 ifp<900thenq$="scudiero di terza categoria":goto25500
+ 25120 ifp<1500thenq$="aspirante guerriero":goto25500
+ 25130 ifp<2000thenq$="guerriero":goto25500
+ 25140 ifp<3000thenq$="eroe dell'avventura":goto25500
+ 25150 ifp<4000thenq$="re della cimeria":goto25500
+ 25160 ifp>=4000thenq$="imperatore dell'oriente"
+ 25500 print"{rvon}{yel}{down}  ";q$;"  ":print"{down}{down}{down}{blk}vuoi riprovare?(y/n)"
+ 25510 geta$:ifa$=""then25510
+ 25520 ifa$="n"thenprint"{clr}":end
+ 25530 clr:goto60
+ 27000 rem -massimo ab e fo-
+ 27010 iffo>90thenfo=90
+ 27020 ifab>75thenab=75
+ 27030 return
+ 27050 rem -paesaggio-
+ 27060 printspc(10)"{down}{down}{down}{down}{down}{down}{down}{blk}{rvon}{SHIFT-POUND} {up}{left}{SHIFT-POUND}{down}{CBM-*}{SHIFT-POUND}{rght}{SHIFT-POUND} {up}{left}{SHIFT-POUND}{down}{CBM-*}{SHIFT-POUND}  {up}{up}{up}{SHIFT-POUND}{CBM-*}{down}{left}{left}  {CBM-*}{down}{left}{left}{left}   {down}{left}{left}{left}   ";
+ 27080 print"{rvon}{CBM-*}{SHIFT-POUND}{up}{up}{SHIFT-POUND}  {CBM-*}{down}{left}{left}{left}{left}    {down}{left}{left}{left}{left}    {CBM-*}{SHIFT-POUND}{CBM-*}"
+ 27090 fort=1to240:print"{rvon} ";:next
+ 27100 return
+ 27110 rem -sentiero-
+ 27120 printspc(14)"{rvon}{blk}{CBM-*}{down}{left} {CBM-*}{down}{left}{left}  {up}{up}";
+ 27130 printspc(9)"{SHIFT-POUND}{down}{left}{left}{SHIFT-POUND} {down}{left}{left}  ":printspc(14);
+ 27140 fort=1to12:print"{rvon} ";:next:print
+ 27150 printspc(14)"{rvon}   {rght}{rght}{SHIFT-POUND}{CBM-*}{rght}{rght}   ":printspc(14)"{rvon}   {CBM-*}{SHIFT-POUND}  {CBM-*}{SHIFT-POUND}   "
+ 27160 printspc(14);
+ 27170 fort=1to12:print"{rvon} ";:next:print
+ 27180 printspc(14)"{rvon}   {CBM-*}{rvof}{CBM-*}{rght}{rght}{SHIFT-POUND}{rvon}{SHIFT-POUND}   "
+ 27190 fort=1to2:printspc(14)"{rvon}    {rght}{rght}{rght}{rght}    ":next
+ 27200 printspc(14)"{rvon}    {CBM-*}{rght}{rght}{SHIFT-POUND}    "
+ 27210 printspc(14)"{rvon}     {CBM-*}{SHIFT-POUND}     {down}"
+ 27220 fort=1to12:print"{up}{up}{rvon}              ":next:print"{up}"
+ 27230 fort=1to12:printspc(26)"{rvon}{up}              ":next
+ 27250 return
+ 27260 rem -strada-
+ 27270 pokeyw,1
+ 27280 printspc(15)"{yel}{rvon}    {rvof}{SHIFT-POUND}{rght}{CBM-*}{rvon}    ":printspc(15)"{rvon}   {rvof}{SHIFT-POUND}{rght}{rght}{rght}{CBM-*}{rvon}   "
+ 27290 printspc(15)"{rvon}  {rvof}{SHIFT-POUND}{rght}{rght}{rght}{rght}{rght}{CBM-*}{rvon}  ":printspc(15)"{rvon} {rvof}{SHIFT-POUND}{rght}{rght}{rght}{rght}{rght}{rght}{rght}{CBM-*}{rvon} "
+ 27300 printspc(15)"{SHIFT-POUND}";spc(9);"{CBM-*}{up}{up}{up}{up}"
+ 27310 fort=1to5:print"{rvon}{up}               ";spc(11);"              ":next
+ 27320 return
+ 28999 end
+ 29000 rem -attesa-
+ 29005 print"{home}"
+ 29010 fort=1to21:print"{down}";:next:printspc(6)"per continuare premi un tasto"
+ 29020 get at$:ifat$=""then29020
+ 29030 print"{clr}":return
+ 29500 rem -morte-
+ 29510 pokewy,0:pokeyw,0:print"{clr}{up}{wht}nella selvaggia cimeria solo i piu'";
+ 29520 print"forti{down}";spc(14);"sopravvivono":gosub30670
+ 29530 printspc(9)"{down}{down}{down}tu non eri tra questi!":printspc(13)"{down}{red}riposa in pace"
+ 29540 gosub29000:goto25000
+ 29550 rem -oggetti ritrovati-
+ 29560 print"{clr}{blu}nella terra di cimeria vale la legge del piu' forte!"
+ 29570 print"a colui che vince spettano gli oggetti  del perdente!"
+ 29580 printco$;",frugando trovi..............{down}":gosub29990:print"{grn}....{rvon}";
+ 29590 s=int(rnd(1)*(200+ft)):ifs>ftthenprint"niente!":gosub29000:return
+ 29600 w=int(rnd(1)*15)+1:t=int(rnd(1)*20)+2
+ 29610 ifw=1thenprint"uno scudo per aumentare la tua forza":fo=fo+10
+ 29620 ifw=2thenprint"una pozione che dona nuova forza":fo=fo+15
+ 29630 ifw=3thenprint"una spada per aumentare l'abilita'":ab=ab+10
+ 29640 ifw=4orw=5thenprint"un talismano che dona fortuna":ft=ft+5
+ 29650 ifw=6orw=7orw=8thenprint"un amuleto portafortuna":ft=ft+3
+ 29655 ifw>8thenprint"un sacchetto con ";t;"{left} zecchini d'oro":ze=ze+t
+ 29660 gosub29000:return
+ 29990 rem -pausa-
+ 29991 fory=0to1100:next:return
+ 30000 rem-grafica spada-
+ 30010 printspc(10)"{down}{blk}Q{rvon}   {rvof}{left}{left}{left}{up}{CBM-@}{CBM-@}{left}{left}{down}{down}{CBM-T}{CBM-T}{up}{rght}{left}{up}{rvon}i{left}{up}{rvof}Z{rvon}{left}{down}{down}{down}i{rvof}{left}{down}Z{up}{up}{rvon}{yel}            {CBM-*}{rvof}
+ 30020 return
+ 30050 rem -grafica montagne-
+ 30060 print"{home}{home}":pokeyw,0:pokewy,6
+ 30070 printspc(18)"{wht}{rvon}{SHIFT-POUND}{CBM-*}{down}{left}{left}  {CBM-*}{down}{left}{left}{left}{left}{SHIFT-POUND}   {CBM-*}{down}{left}{left}{left}{left}{left}{left}{SHIFT-POUND}     "
+ 30080 printspc(16)"{wht}{rvon}      {rght}{rght}{rght}{rght}{rght}{rght}{gry2}{SHIFT-POUND}{CBM-*}"
+ 30090 printspc(9)"{rvon}{gry1}{SHIFT-POUND} {rght}{rght}{rght}{rght}{wht}{SHIFT-POUND}      {CBM-*}{rght}{rght}{rght}{rght}{gry2}{SHIFT-POUND}   {rght}{SHIFT-POUND}  {CBM-*}"
+ 30100 printspc(8)"{rvon}{gry1}{SHIFT-POUND}  {CBM-*}{rght}{rght}{wht}{SHIFT-POUND}        {rght}{rght}{gry2}{SHIFT-POUND}     {rght}    "
+ 30110 print"{rght}{rght}{rght}{rght}{rght}{rght}{rvon}{gry1}{SHIFT-POUND}     {rght}{rght}{wht}         {CBM-*}{gry2}       {CBM-*}    "
+ 30120 print"{rght}{rght}{rght}{rght}{rght}{rvon}{gry1}{SHIFT-POUND}      {CBM-*}{wht}{SHIFT-POUND}          {gry2}            {rght}{rght}{gry1}  "
+ 30130 print"{up}{rvon}{rght}{rght}{rght}{rght}{SHIFT-POUND}         {wht}           {gry2}            {gry1}{SHIFT-POUND}  "
+ 30140 print"{rvon}{gry1}{up}{rght}{rght}{rght}           {wht}            {gry2}           {gry1}   "
+ 30150 print"{up}{rvon}{gry1}{rght}{rght}{SHIFT-POUND}           {wht}            {gry2}           {gry1}   "
+ 30160 return
+ 30170 pokeyw,5:pokewy,6:gosub27000
+ 30180 print"{wht}{clr}{home}{down}la tua situazione e' la seguente.....{down}{down}"
+ 30190 print"{blk}forza fisica.....";fo;"{rght}{rght}{rght}zecchini....";ze
+ 30200 print"{down}abilita' in armi.";ab;"{rght}{rght}{rght}fortuna.....";ft
+ 30210 print"{down}{down}{down}e possiedi...{down}{yel}":j=0
+ 30220 ifas=1thenprint"un'ascia incantata;";:j=1
+ 30230 ifmz=1thenprint"una mazza ferrata;";:j=1
+ 30240 ifsp=1thenprint"una spada d'argento;";:j=1
+ 30250 ifpl=1thenprint"una spada di platino;";:j=1
+ 30260 ifsc=1thenprint"uno scudo d'oro;";:j=1
+ 30280 ifj=0thenprint"{rght}{rght}{rght}ancora nulla!";
+ 30290 print"{down}"
+ 30300 iffo=90thenprint"{blk} max di forza ";
+ 30310 ifab=75thenprint"{blk} max di abilita' ";
+ 30480 gosub29000:return
+ 30490 rem-prima scelta-
+ 30500 pokeyw,5:print"{yel}{down}{down}vuoi:":print"{down}1)guardare la tua situazione"
+ 30510 print"2)raggiungere la citta' di tyro"
+ 30520 print"3)proseguire per la montagna luminosa"
+ 30530 print"4)visitare la contrada di arya"
+ 30540 print"5)andare alla torre magica"
+ 30550 print"6)vedere la mappa della cimeria"
+ 30560 print"{down}{down}{down}{down}{blk}rispondi con un numero e premi return":input n
+ 30565 ifn<>1andn<>6then30590
+ 30570 ifn=1thengosub30170
+ 30575 ifn=6thengosub30900
+ 30580 goto30500
+ 30590 ifn<>3andn<>5then30650
+ 30600 iffo>60thenprint"{clr}{blk}penso anch'io che sia tempo che tu parta":gosub30000
+ 30610 iffo<60thenprint"{clr}{blk}{down}ripensaci ";co$;"!sei ancora molto debole!":gosub30670
+ 30620 print"{yel}{rvon}{down}{down}{down}{down}{rght}{rght}{rght}sei proprio deciso a partire?(y/n)"
+ 30630 getq$:ifq$=""then30630
+ 30640 ifq$="n"then30500
+ 30645 ifq$<>"y"then30620
+ 30650 onngoto1,1000,20000,10000,15000
+ 30655 goto 30500
+ 30670 rem-teschio-
+ 30675 printspc(15)"{wht}{rvon}{down}{down}{down}{SHIFT-POUND}        {CBM-*}":printspc(15)"{rvon}          "
+ 30680 printspc(15)"{rvon}  {blk}  {wht}  {blk}  {wht}  ":printspc(15)"{rvon}  {blk}  {wht}  {blk}  {wht}  "
+ 30690 printspc(15)"{rvon}          {down}{left}{left}{left}{left}{left}{left}{left}{left}{left}{left}    NM    "
+ 30700 printspc(15)"{rvon}{rght}        ":printspc(15)"{rght}{rght}{CBM-H}{CBM-H}{CBM-H}{CBM-H}{CBM-H}{CBM-H}{CBM-H}{left}{left}{down}{left}{left}{left}{left}{left}LLLLLL{CBM-G}"
+ 30710 return
+ 30720 rem-paesaggio-
+ 30730 pokeyw,6:pokewy,1:print"{clr}"
+ 30740 printspc(7)"{down}{down}{down}{down}{down}{down}{orng}{rvon}{SHIFT-POUND}        {CBM-*}"spc(11)"{blk}{SHIFT-POUND}           {up}{left}{left}{left}{SHIFT-POUND}  "
+ 30750 print"{up}{rvof}{rght}{grn}Q{rght}{rght}QQ{up}{rght}{rght}{rght}{rght}QQQQQ{rght}{rght}{rght}{rght}{rght}{down}QQ{rght}QQQQ{rght}{rght}{rght}{up}{rght}Q{rght}Q{down}"
+ 30760 fort=1to240:print"{rvon}{grn} ";:next
+ 30770 return
+ 30780 rem-casualita' d'incontro-
+ 30785 b=0:a=0:av=0:poke53281,1:no=0
+ 30790 b=b+1:a=int(rnd(1)*(ft+50))
+ 30795 ifb=pe/2thenprint"{clr}{yel}coraggio sei a meta' strada!"
+ 30800 ifb=int(pe/1.5)thenprint"{yel}{clr}manca ormai un terzo di percorso!"
+ 30810 ifb=pe-1thenprint"{yel}{clr}ormai sei arrivato!"
+ 30820 ifb=pethenreturn
+ 30830 ifa>ftthenav=av+1
+ 30840 ifav<di+1anda>ftthengosub40000
+ 30850 print"{down}{red}avanti.sei ancora vivo!":print"non c'e' nessuno in vista!":fo=fo+2
+ 30860 print"guadagni in forza(2),":print"ma perdi in abilita'(1)":ab=ab-1
+ 30870 gosub29000:goto30790
+ 30900 rem-mappa-
+ 30910 print"{clr}":pokeyw,13:pokewy,0
+ 30915 printspc(6)"{wht}{rvon}ecco la terra di cimeria:"
+ 30920 printspc(4)"{rvon}{down}{wht}{SHIFT-POUND}{CBM-*}{left}{left}{down}  {CBM-*}{down}{left}{left}{left}{left}{SHIFT-POUND}   {CBM-*}{down}{down}{left}{left}{left}{left}{left}{left}{left}{gry2}montagna{down}{left}{left}{left}{left}{left}{left}{left}{left}luminosa"
+ 30923 print"{down}{rvof}{blu}{rght}{rght}UI{down}{left}{left}{left}UKJI{down}{left}{left}{left}{left}JI{rght}JI{down}{left}{left}{left}{left}{left}UK{rght}{rght}JI{down}{left}{left}{left}{left}{left}{left}B{rght}{rght}{rght}{rght}JI"
+ 30925 print"{rght}JI{rght}{rght}{rght}UK{down}{left}{left}{left}{left}{left}{left}JI{rght}UK{down}{left}{left}{left}{left}JCK{down}{left}{left}{left}{left}{left}{rvon}lago di{down}{left}{left}{left}{left}{left}{left}{left}  oz   "
+ 30927 print"{home}";spc(20);"{down}{down}{down}{orng}{rvon}{CBM-J}{blk}{CBM-U}{orng}{CBM-L}{down}{left}{left}{left}{left}{left}{brn}     {down}{left}{left}{left}{left}{down}{left}{blk}tyro"
+ 30930 printspc(32)"{up}{up}{up}{up}{up}{rvon}{blk}arya{down}{down}{left}{left}{brn}{down}{blk}{left}{left}{left}{brn}{down}{left}{left}{left}{left}{blk}{SHIFT-POUND}{orng}     {blk}{CBM-*}"
+ 30932 printspc(15)"{grn}{down}QQQQQQQQ{rght}{rght}{rght}{rght}{rght}{rght}{up}{rght}{rght}{rght}{rght}{yel}UCIUCI{down}{left}{left}{left}{left}{left}{left}{left}UK{rght}JKUK";
+ 30935 print"{down}{left}{left}{left}{left}{left}{left}{left}B{down}{left}B{rght}{rght}{rght}{rght}{rght}B{up}{left}{left}JI{down}{down}{left}{left}{left}{left}{left}{left}{left}JI{down}{left}B{rght}{rght}{rght}JI{up}{left}{left}UK";
+ 30936 print"{down}{left}{left}{left}{left}{left}{left}JI{down}{left}JK{up}{left}UCCK{down}{down}{left}{left}{left}{left}{left}{left}{left}{blu}deserto"
+ 30937 print"{home}{down}{down}{down}{down}{down}{down}{down}{down}{down}";spc(13);"{grn}QQQQQQQQQQQQ":printspc(14)"QQQQQQQQQQQQQ"
+ 30940 printspc(16)"QQQQQQQQQ{down}{left}{left}{left}{left}{left}{left}QQQQQ{down}{left}{left}{left}{left}{left}{left}{left}{left}{left}{left}{left}{left}{rvon}foresta dei trolls"
+ 30945 printspc(14)"{down}{down}{cyn}{CBM-F}{CBM-F}{CBM-F}{down}{left}{left}{left}{rvon}  {down}{left}{left}  {down}{left}{left}  {rvof}{CBM-K}{up}{left}{CBM-K}{up}{left}{CBM-K}{wht}torre {down}{left}{left}{left}{left}{left}{left}magica";
+ 30950 printspc(7)"{down}{down}{down}{rvon}{blk}       {up}{left}{left}{left}{left}{left}{left}{left}{SHIFT-POUND}{brn} {CBM-U}{orng} {brn}{CBM-U} {blk}{CBM-*}{up}{left}{left}{brn} {left}{left}{left}{left}{left} {up}{blk}{up}{left}ormuz{wht}"
+ 39990 gosub29000:return
+ 39999 end
+ 40000 rem -avversario-
+ 40010 restore
+ 40020 qu=int(rnd(0)*50)+1:fork=1toqu:readnm$,fz,cm:next
+ 40030 fb=int(fz/10)*3:print"{blk}attento ";co$;:print"!"
+ 40035 print"hai incontrato";
+ 40070 print" un.....................":gosub29990:print"{down}........{rvon}{red}";nm$
+ 40080 gosub60000:return
+ 40100 datadinosauro,50,20,stregone,20,23,azteco,25,25,samurai,20,35
+ 40110 datagorilla,30,30,lottatore,28,45,gladiatore,35,40
+ 40120 dataippogrifo,12,26,vichingo,33,34,mago,10,20
+ 40130 datahobbit,5,5,guerriero,27,43,soldato,28,29
+ 40140 datacentauro,25,36,gnomo,19,23,cavaliere nero,35,46
+ 40150 datafolletto,18,21,barbaro,36,43,mercenario,15,29
+ 40160 datastrano skrull,30,30,ciclope,50,55,mostro alato,57,39
+ 40170 datagoblin,37,44,satiro,20,29,grifone,37,46
+ 40180 datatitano,50,60,serpente alato,50,30,gigante,43,49
+ 40190 datasauriano,39,32,minotauro,34,56,dragone,57,29
+ 40200 datapterodattilo,37,25,demonio,39,20,cannibale,47,27
+ 40210 datamammouth,43,46,ragno gigante,18,35,predone,23,29
+ 40220 dataunicorno,31,12,zombi,37,41,orco,50,40
+ 40230 datauomo-lupo,28,34,indemoniato,13,25,kraken,38,40
+ 40240 datatritone,22,33,enorme scorpione,27,40,diavolo,26,24
+ 40250 dataiguana,18,20,cobra dorato,23,29,varano,28,13,anaconda,12,21
+ 60000 rem -combattimento-
+ 60010 print"{down}{grn}la sua forza e' di.....{blu}";:gosub29990:printfz;"{grn}"
+ 60020 print"e ha...{blu}";:gosub29990
+ 60030 printcm;"{grn}{rght}in abilita' di combattimento":goto60100
+ 60090 goto60150
+ 60100 iffz>30thenprint"{down}{red}e' un avversario duro da uccidere!"
+ 60105 ifcm>35thenprint"{down}{blu}attento!e' un ottimo combattente!"
+ 60110 iffz<20andcm<25thenprint"{down}{yel}questi non e' di certo un pericolo!"
+ 60150 gosub29000:poke53280,5
+ 60160 pokeyw,1:ifno=1then60200
+ 60165 print"{clr}";co$;"{blk} pensi di.........":print"{grn}{down}1)attaccare immediatamente"
+ 60170 print"2)avvicinarti amichevolmente":print"3)scappare via"
+ 60175 print"4)procedere senza reagire"
+ 60180 print"5)vedere la tua situazione":print"{down}{down}{red}rispondi con un numero e return"
+ 60185 input e:print"{clr}":pokewy,2
+ 60187 ife=5thengosub30170:goto60160
+ 60190 onegoto60200,60300,60400,60500
+ 60200 print"{clr}{rvon}{red}";nm$;"{blu}{rght}{rght}forza=";fz;"{rght}{rght}abilita'=";cm:gosub27000
+ 60201 print"{rvon}{red}";co$;"{blu}{rght}{rght}{rght}{rght}{rght}forza=";fo;"{rght}{rght}abilita'=";ab;"{down}"
+ 60205 printco$;"{grn} ti lanci contro il tuo avversario e lo colpisci!!":gosub29990
+ 60210 p=int(rnd(1)*(ab+cm))+1
+ 60215 ifp>abthenprint"ma il colpo va a vuoto!":goto60255
+ 60220 print"il colpo va a segno!egli urla di dolore!"
+ 60222 print"gli procuri.....{yel}":gosub29990
+ 60225 r=int(rnd(1)*(ab+fz))+1:ifr>abthenprint"...una ferita!":fz=fz-3
+ 60230 ifr<ab/3thenprint"...tre ferite!":fz=fz-10:goto60240
+ 60235 ifr<aborr=abthenprint"...due ferite!":fz=fz-5
+ 60240 iffz<19thenprint"{down}{yel}sembra molto stanco!attaccalo!"
+ 60245 iffz<9thenprint"{down}{blk}sta barcollando!e' sfinito!"
+ 60250 gosub29990:iffz<1then60600
+ 60255 print"{lblu}{down}{down}il{red} ";nm$;"{lblu} con un ringhio ti e' addosso e colpisce!":gosub29990
+ 60257 p=int(rnd(1)*(cm+ab))+1:qc=qc+1
+ 60258 ifno=1andqc=1thenfb=int(fz/10)*3
+ 60260 ifp>cmthenprint"ma tu schivi il colpo!":goto60280
+ 60262 print"ti ha ferito!stai sanguinando!":print"hai subito.....{yel}":gosub29990
+ 60265 r=int(rnd(1)*(cm+fo))+1:ifr>cmthenprint"...una ferita!":fo=fo-3
+ 60267 ifr<cm/3thenprint"...tre ferite!":fo=fo-10:goto60270
+ 60268 ifr<cmorr=cmthenprint"...due ferite!":fo=fo-5
+ 60270 iffo<1then60600
+ 60272 iffo<19thenprint"{down}{rvon}{blk}la vista ti si annebbia!"
+ 60274 iffo<9thenprint"{down}{rvon}{yel}stai per crollare!sei troppo debole!"
+ 60280 ifno=1thengosub29000:goto60200
+ 60295 printspc(6)"{down}{down}{down}vuoi continuare? (s/n)"
+ 60296 gets$:ifs$=""then60296
+ 60297 ifs$="n"then60400
+ 60298 goto60200
+ 60300 print"{clr}{rvon}{red}";co$;"{rvof},{blu}provi ad avvicinarti  amichevolmente....";:gosub29990
+ 60310 print"...lui ti guarda...":gosub29990
+ 60320 ifqu>20thenprint"{blk}.....ma non e' un amico e ti attacca!{down}"
+ 60330 ifqu>20thenprint"{rvon}{grn}";co$;"{rvof}{blu},ricordati che un {rvon}{red}";
+ 60335 ifqu>20thenprintnm$;"{rvof}{blu} non e' mai un amico!"
+ 60340 ifqu>20thengosub29990:goto60255
+ 60350 q=int(rnd(1)*(ft+100))+1:ifq>ftthenprint"...{blu}e ti attacca!":goto60255
+ 60360 print"{grn}...e si dimostra un amico!":print"{blu}egli ti dona..........."
+ 60370 gosub29990:gosub29600:return
+ 60400 print"{clr}{rvon}{red}";co$;"{rvof}{blu},ti dimostri un vigliacco e perdi 2 punti in abilita'!"
+ 60410 ab=ab-2:q=int(rnd(1)*(30+ft)):print"{down}{blk}il tuo avversario ti corre dietro.."
+ 60420 gosub29990
+ 60425 ifq>ftthenprint"{grn}...e ti raggiunge!la fuga non e' servita!":goto60255
+ 60430 print"{grn}.....ma e' molto lento!sei riuscito a fuggire!":return
+ 60500 print"{clr}{red}{rvon}";co$;"{rvof}{blu},avanzi nella sua direzione........"
+ 60510 q=int(rnd(1)*(ft+100))+1:print"{down}{blk}...egli ti guarda......":gosub29990
+ 60520 ifq>ftthenprint"{grn}....e ti attacca!":goto60255
+ 60530 print"{grn}....e se ne va dall'altra parte!":return
+ 60600 iffo<1thengosub29500
+ 60610 print"{red}{rvon}{down}{down}il tuo avversario crolla!e' morto!":qc=0
+ 60620 a=int(cm/10)*2:ab=ab+a:fo=fo+fb
+ 60630 print"{down}{down}ottieni";a;"in abilita' e";fb;"in forza{blk}":gosub27000
+ 60650 gosub29000:gosub29550:return
